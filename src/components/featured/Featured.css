@@ -1,0 +1,133 @@
+.featured-containe{
+    display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+/* featured split */
+.featured-split-1{
+    margin-left:7rem ;
+}
+.featured-split-1 h1{
+    font-family: Poppins;
+    color: black;
+    font-size: 120px;
+    line-height: 1;
+}
+.featured-split-1 strong{
+    color: #0065e7;
+}
+.featured-split-1 p{
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+/* split 2 */
+.featured-split-2{
+    margin-left:7rem ;
+}
+.featured-split-2 img{
+    width: 30%;
+}
+/* img  overlay */
+.img-content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, -180%);
+    text-align: center;
+    color: #fff;
+    width: 400px;
+    text-align: start;
+    font-family: Poppins;
+  }
+  .img-content-overlay h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .img-content-overlay p {
+    font-size: 16px;
+  }
+
+  
+/* img wrap */
+.img-wrap-featured{
+    display: flex;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.img-wrap-featured img{
+    margin-right: 25px;
+    height: 680px;
+
+}
+
+
+
+/* img content featured */
+.img-content-featured{
+    position: relative;
+}
+.img-content-featured h2{
+    margin: 0;
+}
+.img-content-featured p{
+    margin: 0;
+}
+
+
+/* Use media queries to apply different styles for mobile devices */
+
+/* Mobile devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .featured-containe{
+    width: 90%;
+  }
+    .featured-split-1,
+    .featured-split-2 {
+      margin-left: 0;
+    }
+    .featured-split-1 h1 {
+      font-size: 60px;
+    }
+    .featured-split-1 p {
+        font-size: 16px;
+        width: 70%;
+      }
+    .featured-split-2 img {
+      width: 100%;
+    }
+    .img-content-overlay {
+      position: static;
+      transform: none;
+      width: auto;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+    .img-content-featured {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .img-wrap-featured {
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-wrap-featured img {
+      margin-right: 0;
+      margin-bottom: 20px;
+      height: auto;
+      max-width: 100%;
+    }
+    
+  }
+  
+  /* Tablets and larger devices (up to 992px) */
+  @media only screen and (max-width: 992px) {
+    .img-wrap-featured img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  

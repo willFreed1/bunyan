@@ -1,0 +1,114 @@
+.background-career{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  background: linear-gradient(to right, rgba(23, 113, 230, 1) 1%, rgba(23, 113, 230, 0) 50%), url("../../assets/careers.png" );
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+
+    
+}
+.split-career{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.rectangle{
+    background-color: white;
+    flex-direction: column;
+    display:flex;
+    text-align: left;
+    height: 450px;
+    box-sizing: border-box;
+    color: black;
+    align-items: flex-end;
+    margin-left:3rem;
+    margin-top: 5rem;
+    position: relative;
+    align-items: flex-start;
+    border-radius: 100px;
+    
+}
+.rectangle h1{
+    font-size: 100px;
+    margin-left: 8rem;
+    position: relative;
+}
+.rectangle p {
+    font-size: 14px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    z-index: 1;
+    top: 0%;
+    right: 0;
+    transform: translate(0%, -60%);
+
+}
+.rectangle button{
+    margin-left: 8rem;
+    width: 8rem;
+}
+.img-design{
+    margin: 2rem;
+    z-index: 1;
+    top: 0%;
+    right: 0;
+    transform: translate(170%, 40%);
+
+}
+.img-design img{
+    height: 550px;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-career {
+      height: auto;
+      min-height: 800px;
+    }
+  
+    .split-career {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .rectangle {
+      margin: 2rem;
+      align-items: center;
+      border-radius: 0;
+    }
+  
+    .rectangle h1 {
+      font-size: 60px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .rectangle p {
+      margin: 1rem;
+      text-align: center;
+      transform: none;
+    }
+  
+    .rectangle button {
+      margin-left: 0;
+    }
+  
+    .img-design {
+      margin: 2rem 0;
+      padding: 3rem;
+      transform: none;
+      width: 50%;
+      transform: rotate(90deg);
+
+    }
+  
+    .img-design img {
+      width: 100%;
+      height: auto;
+    }
+  }
